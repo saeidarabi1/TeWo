@@ -1,10 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Oleo+Script+Swash+Caps&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    font-family: 'Oleo Script Swash Caps', cursive;
+    box-sizing: border-box; 
+    font-family: ' font-family: 'Roboto', sans-serif; ', cursive; 
 }
 
 body {
@@ -12,8 +12,8 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: transparent;
-}
+   background: linear-gradient(45deg, #006bc6, #1ecafc); 
+} 
 
 .container {
     position: relative;
@@ -23,8 +23,9 @@ body {
 }
 
 .container h2 {
+    opacity: 0;
     position: absolute;
-    color: #fff;
+    color: #000000;
     font-size: 1.75em;
     font-weight: 500;
     animation: fadeIn 2s ease-in-out 1s forwards;
@@ -41,13 +42,13 @@ body {
 }
 
 .loader {
-    position: relative;
+    position: relative; 
     width: 300px;
     height: 300px;
     display: flex;
     justify-content: center;
     align-items: center;
-    background: rgba(0, 0, 0, 0.25);
+    background: rgba(0, 0, 0, 0.25); 
     filter: url(#gooey);
 }
 
@@ -57,7 +58,7 @@ body {
     transform-origin: 150px;
     width: 100px;
     height: 100px;
-    background: #fff;
+    background: #f59d15;
     border-radius: 50%;
     animation: animate 5s ease-in-out;
     animation-delay: calc(0.15s * var(--i));
